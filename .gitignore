@@ -3,3 +3,6 @@
 /deps
 erl_crash.dump
 *.ez
+
+# Ignore the solutions :)
+test/test_the_planet/
