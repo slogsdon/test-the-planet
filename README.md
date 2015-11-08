@@ -1,10 +1,20 @@
 # TestThePlanet
 
-**TODO: Add description**
+Code for an Elixir workshop covering testing with ExUnit.
+
+The workshop is intended to be instructor led and doesn't seek out to cover the
+merits of testing, TDD, etc. It is designed to walk a participant through what
+tools ExUnit has to offer and effective ways to leverage those tools.
 
 ## Progression
 
+A participant will want the ExUnit documentation available while using the
+available code, documentation, and type specs available in this project's
+modules. The below order is a suggestion but does not have to be taken.
+
 1. `TestThePlanet.TheBasics`
+2. `TestThePlanet.OutsideInfluence`
+3. `TestThePlanet.ProvideContext`
 
 ## License
 
