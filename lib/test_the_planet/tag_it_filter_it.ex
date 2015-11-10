@@ -21,16 +21,16 @@ defmodule TestThePlanet.TagItFilterIt do
 
   @doc "A simple callback"
   @callback call(String.t) :: String.t
+end
 
-  defmodule ServiceA do
-    @moduledoc "Returns the given string"
-    @behaviour TestThePlanet.TagItFilterIt
-    def call(str), do: str
-  end
+defmodule TestThePlanet.TagItFilterIt.ServiceA do
+  @moduledoc "Returns the given string"
+  @behaviour TestThePlanet.TagItFilterIt
+  def call(str), do: str
+end
 
-  defmodule ServiceB do
-    @moduledoc "Reverses the given string"
-    @behaviour TestThePlanet.TagItFilterIt
-    defdelegate call, to: String, as: :reverse
-  end
+defmodule TestThePlanet.TagItFilterIt.ServiceB do
+  @moduledoc "Reverses the given string"
+  @behaviour TestThePlanet.TagItFilterIt
+  def call(str), do: str |> String.reverse
 end
