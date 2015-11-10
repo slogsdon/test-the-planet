@@ -15,6 +15,7 @@ modules. The below order is a suggestion but does not have to be taken.
 1. `TestThePlanet.TheBasics`
 2. `TestThePlanet.OutsideInfluence`
 3. `TestThePlanet.ProvideContext`
+3. `TestThePlanet.TagItFilterIt`
 
 ## License
 
