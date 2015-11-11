@@ -28,8 +28,8 @@ defmodule TestThePlanet.OutsideInfluence do
   testing properly an obscure task.
   """
   @spec service :: {atom, term}
-  def service do
-    API.call("/")
+  def service(api \\ API) do
+    api.call("/")
   end
 
   @doc """

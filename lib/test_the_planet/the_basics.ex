@@ -70,7 +70,7 @@ defmodule TestThePlanet.TheBasics do
   @doc """
   Inspects data to console.
   """
-  @spec log(any) :: any
+  @spec inspect_data(any) :: any
   def inspect_data(data) do
     IO.inspect(data)
   end
